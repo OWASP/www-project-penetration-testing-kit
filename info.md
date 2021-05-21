@@ -1,7 +1,6 @@
 ### Project Information
 * <img src="assets/images/owasp_level_incubator.svg" width="66">
   <span style="font-size: 1.3em;">Incubator Project</span>
-* [Version 1.0.9](https://github.com/SasanLabs/VulnerableApp/releases/tag/1.0.9)
 
 #### Classification
 * <i class="fas fa-tools" style="color:#233e81;"></i> Tool
