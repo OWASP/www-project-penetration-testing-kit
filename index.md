@@ -17,8 +17,6 @@ Are you a penetration tester or a member of a Red Team or an application securit
 Based on the Wappalyzer NPM module the PTK provides a piece of insightful information about a technology stack, security headers, crawled links, and domains. A detailed traffic log allows a user to repeat a request in the R-Builder or send for attacking to the R-Attacker and execute XSS, SQL, or OS Command injections on any particular request.
 Macro and traffic recording, bootstrap authentication to bypass MFA/Captcha, Swagger Editor, and much more that helps in day to day application security job.  
 
-**VulnerableApp** is built keeping these factors in mind. This project is scalable, extensible, easier to integrate and easier to learn.
-As solving the above issue requires addition of various vulnerabilities, hence it becomes a very good platform to learn various security vulnerabilities.
 
 ## Installation
 
