@@ -1,4 +1,4 @@
-# OWASP Penetration Testing Kit ![Penetration Testing Kit](https://github.com/DenisPodgurskii/pentestkit/blob/master/src/ptk/browser/assets/images/ptk_icon_small.png) 
+# ![Penetration Testing Kit](https://github.com/DenisPodgurskii/pentestkit/blob/master/src/ptk/browser/assets/images/ptk_icon_small.png) 
 
 ![OWASP Incubator](https://raw.githubusercontent.com/OWASP/www-project-penetration-testing-kit/main/assets/images/OWASP_Incubator_Project.svg) [![License](https://raw.githubusercontent.com/OWASP/www-project-penetration-testing-kit/main/assets/images/License_MIT.svg)](https://opensource.org/licenses/MIT) 
 
