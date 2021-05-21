@@ -17,8 +17,7 @@ The PTK is a cross-browser extension that helps penetration testers, Red Teams, 
 
 Based on the Wappalyzer NPM module the PTK provides a piece of insightful information about a technology stack, security headers, crawled links, and domains. A detailed traffic log allows a user to repeat a request in the R-Builder or send for attacking to the R-Attacker and execute XSS, SQL, or OS Command injections on any particular request.
 
-Macro and traffic recording, bootstrap authentication to bypass MFA/Captcha, Swagger Editor, and much more that helps in day to day application security job.  
-
+Macro and traffic recording, bootstrap authentication to bypass MFA/Captcha, Swagger Editor, and much more like JSON Web Token attacks.
 
 ## Installation
 
