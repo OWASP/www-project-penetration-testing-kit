@@ -1,17 +1,16 @@
-### Penetration Testing Kit Information
-* [Incubator Project](#)
-* [Type of Project](#)
-* [Version 0.0.0](#)
-* [Builder](#)
-* [Breaker](#)
+### Project Information
+* <img src="assets/images/owasp_level_incubator.svg" width="66">
+  <span style="font-size: 1.3em;">Incubator Project</span>
+* [Version 1.0.9](https://github.com/SasanLabs/VulnerableApp/releases/tag/1.0.9)
 
-### Downloads or Social Links
-* [Download](#)
-* [Meetup](#)
+#### Classification
+* <i class="fas fa-tools" style="color:#233e81;"></i> Tool
+
+#### Audience
+* <i class="fas fa-hammer" style="color:#233e81;"></i> Breaker
+* <i class="fas fa-hammer" style="color:#233e81;"></i> Breaker
+* <i class="fas fa-shield-alt" style="color:#233e81;"></i> Defender
 
 ### Code Repository
-* [repo](#)
-
-### Change Log
-* [changes](#)
+* [Github Repository](https://github.com/DenisPodgurskii/pentestkit)
 
