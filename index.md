@@ -21,7 +21,9 @@ Macro and traffic recording, bootstrap authentication to bypass MFA/Captcha, Swa
 ## Installation
 
 [Firefox](https://addons.mozilla.org/en-US/firefox/addon/penetration-testing-kit/) 
+
 [Chrome](https://chrome.google.com/webstore/detail/penetration-testing-kit/ojkchikaholjmcnefhjlbohackpeeknd) 
+
 [MS Edge](https://microsoftedge.microsoft.com/addons/detail/penetration-testing-kit/knjnghhnhcpcglfdjppffbpfndeebkdm) 
 
 
