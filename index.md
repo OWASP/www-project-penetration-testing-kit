@@ -8,7 +8,7 @@ type: code
 pitch: PTK is a cross-browser extension that helps application security practitioners to get an insight into the app and do runtime scanning for SQL, XSS, OS Command injections, and more. 
 
 ---
-![Penetration Testing Kit Logo](https://github.com/DenisPodgurskii/pentestkit/blob/master/src/ptk/browser/assets/images/ptk_icon_small.png) 
+![Penetration Testing Kit Logo](https://raw.githubusercontent.com/DenisPodgurskii/pentestkit/master/src/ptk/browser/assets/images/ptk_icon_small.png) 
 
 
 ![OWASP Incubator](https://raw.githubusercontent.com/OWASP/www-project-penetration-testing-kit/main/assets/images/OWASP_Incubator_Project.svg) [![License](https://raw.githubusercontent.com/OWASP/www-project-penetration-testing-kit/main/assets/images/License_MIT.svg)](https://opensource.org/licenses/MIT) 
@@ -23,15 +23,15 @@ As solving the above issue requires addition of various vulnerabilities, hence i
 ## Installation
 
 
-[![Youtube]](https://www.youtube.com/channel/UCbEcTounPkV1aitE1egXfqw) 
+![Youtube](https://www.youtube.com/channel/UCbEcTounPkV1aitE1egXfqw) 
 
 ## Documentation and How To
 
-[![Website]](https://denispodgurskii.github.io/pentestkit/) 
+![Website](https://denispodgurskii.github.io/pentestkit/) 
 
 
 ## Youtube channel
 
-[![Youtube]](https://www.youtube.com/channel/UCbEcTounPkV1aitE1egXfqw) 
+![Youtube](https://www.youtube.com/channel/UCbEcTounPkV1aitE1egXfqw) 
 
 
