@@ -2,21 +2,36 @@
 
 layout: col-sidebar
 title: OWASP Penetration Testing Kit
-tags: example-tag
+tags: Penetration Testing Kit
 level: 2
-type: 
-pitch: A very brief, one-line description of your project
+type: code
+pitch: PTK is a cross-browser extension that helps application security practitioners to get an insight into the app and do runtime scanning for SQL, XSS, OS Command injections, and more. 
 
 ---
+![Penetration Testing Kit Logo](https://github.com/DenisPodgurskii/pentestkit/blob/master/src/ptk/browser/assets/images/ptk_icon_small.png) 
 
-This is an example of a Project or Chapter Page.  Please change these items to indicate the actual information you wish to present.  In addition to this information, the 'front-matter' above this text should be modified to reflect your actual information.  An explanation of each of the front-matter items is below:
 
-layout: This is the layout used by project and chapter pages.  You should leave this value as col-sidebar
+![OWASP Incubator](https://raw.githubusercontent.com/OWASP/www-project-penetration-testing-kit/main/assets/images/OWASP_Incubator_Project.svg) [![License](https://raw.githubusercontent.com/OWASP/www-project-penetration-testing-kit/main/assets/images/License_MIT.svg)](https://opensource.org/licenses/MIT) 
 
-title: This is the title of your project or chapter page, usually the name.  For example, OWASP Zed Attack Proxy or OWASP Baltimore
+Are you a penetration tester or a member of a Red Team or an application security practitioner? Need a security insight on an application?  Try the PTK - an extension that makes your browser smarter.
+Based on the Wappalyzer NPM module the PTK provides a piece of insightful information about a technology stack, security headers, crawled links, and domains. A detailed traffic log allows a user to repeat a request in the R-Builder or send for attacking to the R-Attacker and execute XSS, SQL, or OS Command injections on any particular request.
+Macro and traffic recording, bootstrap authentication to bypass MFA/Captcha, Swagger Editor, and much more that helps in day to day application security job.  
 
-tags: This is a space-delimited list of tags you associate with your project or chapter.  If you are using tabs, at least one of these tags should be unique in order to be used in the tabs files (an example tab is included in this repo) 
+**VulnerableApp** is built keeping these factors in mind. This project is scalable, extensible, easier to integrate and easier to learn.
+As solving the above issue requires addition of various vulnerabilities, hence it becomes a very good platform to learn various security vulnerabilities.
 
-level: For projects, this is your project level (2 - Incubator, 3 - Lab, 4 - Flagship)
+## Installation
 
-type: code, tool, documentation, or other
+
+[![Youtube]](https://www.youtube.com/channel/UCbEcTounPkV1aitE1egXfqw) 
+
+## Documentation and How To
+
+[![Website]](https://denispodgurskii.github.io/pentestkit/) 
+
+
+## Youtube channel
+
+[![Youtube]](https://www.youtube.com/channel/UCbEcTounPkV1aitE1egXfqw) 
+
+
