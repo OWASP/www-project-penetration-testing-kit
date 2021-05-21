@@ -28,7 +28,7 @@ Macro and traffic recording, bootstrap authentication to bypass MFA/Captcha, Swa
 [MS Edge](https://microsoftedge.microsoft.com/addons/detail/penetration-testing-kit/knjnghhnhcpcglfdjppffbpfndeebkdm) 
 
 
-## Documentation and How To
+## Documentation / How To
 
 [Website](https://denispodgurskii.github.io/pentestkit/) 
 
