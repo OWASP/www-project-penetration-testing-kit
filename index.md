@@ -13,7 +13,7 @@ pitch: PTK is a cross-browser extension that helps application security practiti
 
 ![OWASP Incubator](https://raw.githubusercontent.com/OWASP/www-project-penetration-testing-kit/main/assets/images/OWASP_Incubator_Project.svg) [![License](https://raw.githubusercontent.com/OWASP/www-project-penetration-testing-kit/main/assets/images/License_MIT.svg)](https://opensource.org/licenses/MIT) 
 
-The PTK is a cross-browser extension that helps penetration testers, Red Teams, or application security practitioners to make their day-to-day job much easier.
+The PTK is a cross-browser extension that helps penetration testers, Red/Blue/Purple Teams, or application security practitioners make their day-to-day jobs much easier.
 
 Based on the Wappalyzer NPM module the PTK provides a piece of insightful information about a technology stack, security headers, crawled links, and domains. A detailed traffic log allows a user to repeat a request in the R-Builder or send for attacking to the R-Attacker and execute XSS, SQL, or OS Command injections on any particular request.
 
