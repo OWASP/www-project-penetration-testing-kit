@@ -30,7 +30,7 @@ Macro and traffic recording, bootstrap authentication to bypass MFA/Captcha, Swa
 
 ## Documentation / How To
 
-[Website](https://denispodgurskii.github.io/pentestkit/) 
+[Website](https://pentestkit.co.uk/) 
 
 
 ## Youtube channel
