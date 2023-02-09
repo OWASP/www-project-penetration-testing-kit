@@ -13,7 +13,7 @@ pitch: PTK is a cross-browser extension that helps application security practiti
 
 ![OWASP Incubator](https://raw.githubusercontent.com/OWASP/www-project-penetration-testing-kit/main/assets/images/OWASP_Incubator_Project.svg) [![License](https://raw.githubusercontent.com/OWASP/www-project-penetration-testing-kit/main/assets/images/License_MIT.svg)](https://opensource.org/licenses/MIT) 
 
-Support OWASP PTK ![Donate](https://raw.githubusercontent.com/DenisPodgurskii/pentestkit/master/src/ptk/browser/assets/images/paypal.png)
+Support OWASP PTK ![Donate](https://raw.githubusercontent.com/DenisPodgurskii/pentestkit/master/src/ptk/browser/assets/images/paypal.png | width=250)
 
 Penetration Testing Kit browser extension allows you to simplify your day-to-day job in application security.
 
