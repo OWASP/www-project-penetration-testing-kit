@@ -51,4 +51,8 @@ Are you a penetration tester or a member of a Red Team or an application securit
 
 [Youtube channel](https://www.youtube.com/channel/UCbEcTounPkV1aitE1egXfqw) 
 
+## Read more
+
+[The Next Evolution of Browser-Based Penetration Testing Kits: OWASP PTK]([https://pentestkit.co.uk/](https://www.true-positives.com/post/the-next-evolution-of-browser-based-penetration-testing-kits-owasp-ptk)) 
+
 
