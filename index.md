@@ -59,8 +59,4 @@ Enhance your application security practices with PTK, the browser extension that
 
 [Youtube channel](https://www.youtube.com/channel/UCbEcTounPkV1aitE1egXfqw) 
 
-## Read more
-
-[The Next Evolution of Browser-Based Penetration Testing Kits](https://www.true-positives.com/post/the-next-evolution-of-browser-based-penetration-testing-kits-owasp-ptk)
-
 
