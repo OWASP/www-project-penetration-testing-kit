@@ -54,7 +54,7 @@ Enhance your AppSec practice with PTK—the extension that makes your browser sm
 
 ## Installation
 
-[Firefox](https://addons.mozilla.org/en-US/firefox/addon/penetration-testing-kit/) 
+[Firefox](https://addons.mozilla.org/en-US/firefox/addon/owasp-penetration-testing-kit/) 
 
 [Chrome](https://chrome.google.com/webstore/detail/penetration-testing-kit/ojkchikaholjmcnefhjlbohackpeeknd) 
 
