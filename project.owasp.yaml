@@ -1,0 +1,27 @@
+audience:
+  - breaker
+  - builder
+  - defender
+leaders:
+  - name: Denis Podgurskii
+    email: denis.podgurskii@owasp.org
+    github: DenisPodgurskii
+level: 2
+license:
+  - AGPL-3.0
+name: OWASP Penetration Testing Kit
+pitch: PTK is a cross-browser extension that helps application security practitioners to get an insight into the app and do runtime scanning for SQL, XSS,
+  OS Command injections, and more.
+repositories:
+  - name: www-project-penetration-testing-kit
+    url: https://github.com/OWASP/www-project-penetration-testing-kit
+    description: OWASP Foundation Web Repository
+  - name: pentestkit
+    url: https://github.com/DenisPodgurskii/pentestkit
+    description: OWASP PTK - application security browser extension.
+tags:
+  - Penetration
+  - Testing
+  - Kit
+type: code
+website: https://owasp.org/www-project-penetration-testing-kit
