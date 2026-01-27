@@ -71,6 +71,10 @@ Enhance your AppSec practice with PTK—the extension that makes your browser sm
 
 [Website](https://pentestkit.co.uk/) 
 
+## Support
+
+For questions, bug reports, and feature requests, please use **GitHub Issues**:  
+https://github.com/DenisPodgurskii/pentestkit/issues
 
 ## Youtube channel
 
