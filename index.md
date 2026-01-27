@@ -15,6 +15,8 @@ pitch: PTK is a cross-browser extension that helps application security practiti
 
 Support OWASP PTK [Donate](https://www.paypal.com/donate/?hosted_button_id=RNE87MVGX576E)
 
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/11838/badge)](https://www.bestpractices.dev/projects/11838)
+
 
 **The OWASP Penetration Testing Kit (PTK)** browser extension is your all-in-one solution for streamlining your daily AppSec tasks. Whether you’re a penetration tester, a Red Team member, or an AppSec practitioner, OWASP PTK enhances your efficiency and provides deep insights into your target application.
 
