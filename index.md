@@ -3,7 +3,7 @@
 layout: col-sidebar
 title: OWASP Penetration Testing Kit
 tags: Penetration Testing Kit
-level: 2
+level: 3
 type: code
 pitch: PTK is a cross-browser extension that helps application security practitioners to get an insight into the app and do runtime scanning for SQL, XSS, OS Command injections, and more. 
 
