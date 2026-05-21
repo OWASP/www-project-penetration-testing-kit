@@ -1,6 +1,6 @@
 ### Project Information
-* <img src="assets/images/owasp_level_incubator.svg" width="66">
-  <span style="font-size: 1.3em;">Incubator Project</span>
+* <i class="fas fa-flask" style="font-size: 1.3em; color:#f7b73c;"></i>
+  <span style="font-size: 1.3em;">Lab Project</span>
 
 #### Classification
 * <i class="fas fa-tools" style="color:#233e81;"></i> Tool
