@@ -55,9 +55,9 @@ Inspect and replay browser traffic, modify requests, import or export cURL comma
 
 OWASP PTK is the interactive extension for tester-driven security testing. **OWASP PTK Automation (PTK Auto)** is the separate browser runtime used by PTK Agent for automated tests, CLI workflows, CI/CD pipelines, and supported browser-testing platforms.
 
-PTK automation supports browser workflows built with Playwright, Puppeteer, Selenium, and Cypress. PTK also integrates with OWASP ZAP so browser-side PTK analysis can be combined with broader ZAP testing.
+PTK automation supports browser workflows built with Playwright, Puppeteer, Selenium, and Cypress. PTK also integrates with ZAP so browser-side PTK analysis can be combined with broader ZAP testing.
 
-[Read the automation and ZAP guide](https://github.com/DenisPodgurskii/pentestkit/blob/master/docs/guide/automation-and-zap.md) · [View the npm package](https://www.npmjs.com/package/pentestkit) · [Read the OWASP ZAP add-on documentation](https://www.zaproxy.org/docs/desktop/addons/owasp-ptk/)
+[Read the automation and ZAP guide](https://github.com/DenisPodgurskii/pentestkit/blob/master/docs/guide/automation-and-zap.md) · [View the npm package](https://www.npmjs.com/package/pentestkit) · [Read the ZAP add-on documentation](https://www.zaproxy.org/docs/desktop/addons/owasp-ptk/)
 
 ## Where PTK fits
 
