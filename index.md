@@ -5,7 +5,7 @@ title: OWASP Penetration Testing Kit
 tags: Penetration Testing Kit
 level: 3
 type: code
-pitch: Open-source web application security testing from the live browser session, combining DAST, client-side SAST, in-browser IAST, SCA, and manual tools.
+pitch: Open-source web application security testing from the live browser session, combining DAST, client-side SAST, in-browser IAST, SCA, manual tools, and browser automation.
 
 ---
 
@@ -22,6 +22,18 @@ PTK provides its own extension interface. It does not use browser DevTools and d
 [Install for Chrome](https://chromewebstore.google.com/detail/owasp-penetration-testing/ojkchikaholjmcnefhjlbohackpeeknd) · [Install for Microsoft Edge](https://microsoftedge.microsoft.com/addons/detail/penetration-testing-kit/knjnghhnhcpcglfdjppffbpfndeebkdm) · [Install for Firefox](https://addons.mozilla.org/en-US/firefox/addon/owasp-penetration-testing-kit/) · [Open the browser-security playground](https://denispodgurskii.github.io/DOM-based-test-cases/)
 
 [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/11838/badge)](https://www.bestpractices.dev/projects/11838)
+
+## PTK components
+
+| Component | Use | Get started |
+| --- | --- | --- |
+| **OWASP PTK** | Interactive browser security testing, manual tools, and tester-controlled scans. | [Chrome](https://chromewebstore.google.com/detail/owasp-penetration-testing/ojkchikaholjmcnefhjlbohackpeeknd) · [Edge](https://microsoftedge.microsoft.com/addons/detail/penetration-testing-kit/knjnghhnhcpcglfdjppffbpfndeebkdm) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/owasp-penetration-testing-kit/) |
+| **PTK Auto** | Restricted browser-side security runtime controlled by an authorised automation session. | [Chrome](https://chromewebstore.google.com/detail/owasp-penetration-testing/aiebcfjmdihgeeigbbcdpbpehikbdcgk) · [Edge](https://microsoftedge.microsoft.com/addons/detail/owasp-penetration-testing/jpppfkdhfjdkljeakammiplbdacnpdjg) · [Firefox](https://addons.mozilla.org/en-US/firefox/addon/owasp-pentestingkit-automation/) |
+| **PTK Agent** | The `pentestkit` npm package, CLI, browser-framework integrations, cloud-browser providers, and PTK Auto orchestration. | [npm](https://www.npmjs.com/package/pentestkit) · [Documentation and source](https://github.com/ptklabs/ptk-agent) |
+| **PTK Action** | GitHub Actions security scans with PTK findings, normal scan artifacts, severity gates, and SARIF for GitHub Code Scanning. | [GitHub Marketplace](https://github.com/marketplace/actions/owasp-ptk-security-scan) · [Documentation and source](https://github.com/ptklabs/ptk-action) |
+| **OWASP ZAP integration** | ZAP-managed browser sessions with PTK browser-side findings imported into the ZAP alert model. | [ZAP add-on documentation](https://www.zaproxy.org/docs/desktop/addons/owasp-ptk/) |
+
+PTK Auto is not the interactive PTK extension and does not provide the complete manual testing interface. Most local PTK Agent users do not need to install PTK Auto separately: the `pentestkit` package includes the browser-specific automation artifacts and prepares them for supported workflows. Store installations are useful for dedicated automation profiles and environments that require a signed extension. Use a dedicated test profile rather than a personal browsing profile.
 
 ## Why browser context matters
 
@@ -55,17 +67,11 @@ Inspect and replay browser traffic, modify requests, import or export cURL comma
 
 OWASP PTK is the interactive extension for tester-driven security testing. **OWASP PTK Automation (PTK Auto)** is the separate browser runtime used by PTK Agent for automated tests, CLI workflows, CI/CD pipelines, and supported browser-testing platforms.
 
-PTK automation supports browser workflows built with Playwright, Puppeteer, Selenium, and Cypress. PTK also integrates with ZAP so browser-side PTK analysis can be combined with broader ZAP testing.
+PTK Agent supports Playwright, Puppeteer, Selenium, and Cypress, together with supported cloud-browser providers. PTK also integrates with ZAP so browser-side PTK analysis can be combined with broader ZAP testing.
 
-[Read the automation and ZAP guide](https://github.com/DenisPodgurskii/pentestkit/blob/master/docs/guide/automation-and-zap.md) · [View the npm package](https://www.npmjs.com/package/pentestkit) · [Read the ZAP add-on documentation](https://www.zaproxy.org/docs/desktop/addons/owasp-ptk/)
+[Read the PTK Agent documentation](https://github.com/ptklabs/ptk-agent/blob/main/docs/npm/README.md) · [View the npm package](https://www.npmjs.com/package/pentestkit) · [Open PTK Action in GitHub Marketplace](https://github.com/marketplace/actions/owasp-ptk-security-scan) · [Read the ZAP add-on documentation](https://www.zaproxy.org/docs/desktop/addons/owasp-ptk/)
 
-## Where PTK fits
-
-PTK complements full interception proxies, network scanners, and repository-level source-code analysis tools; it is not intended to replace all of them.
-
-Its particular strength is testing what the browser can actually see and execute: authenticated workflows, browser-generated traffic, loaded client-side code, DOM behaviour, SPA navigation, and runtime application state.
-
-## Quick start
+## Interactive quick start
 
 1. Install PTK for Chrome, Microsoft Edge, or Firefox.
 2. Open an application that you are authorised to test, preferably in a dedicated browser profile.
@@ -76,12 +82,68 @@ Its particular strength is testing what the browser can actually see and execute
 
 New users can begin with the public [browser-security playground](https://denispodgurskii.github.io/DOM-based-test-cases/), which contains deterministic test cases for client-side SAST, passive DAST, and IAST.
 
+## Automate with PTK Agent
+
+Install the `pentestkit` npm package and the Chromium browser used by the default scanner:
+
+```bash
+npm install -D pentestkit
+npx playwright install chromium
+npx ptk-agent --doctor-extension
+```
+
+Run a scan against an application you are authorised to test:
+
+```bash
+npx ptk-scan https://your-authorised-target.example \
+  --engine DAST,IAST,SAST,SCA \
+  --require-ptk-bridge \
+  --require-ptk-findings-export \
+  --wait-for-ptk-complete
+```
+
+PTK Agent can also wrap existing Playwright, Puppeteer, Selenium, and Cypress journeys so security checks use the same authenticated browser workflow as the test. Provider helpers are available for supported Browserbase, Browserless, BrowserStack, Hyperbrowser, Steel, and TestMu workflows. Check the [provider support matrix](https://github.com/ptklabs/ptk-agent/blob/main/docs/npm/provider-browser-matrix.md) before selecting a framework and provider combination.
+
+## Run PTK in GitHub Actions
+
+[OWASP PTK Security Scan](https://github.com/marketplace/actions/owasp-ptk-security-scan) runs PTK Agent and PTK Auto in a GitHub-hosted Linux Chromium session. It can export normal PTK artifacts and GitHub Code Scanning-compatible SARIF, and it can fail a workflow when findings meet a configured severity.
+
+Start the application in the workflow before running the PTK step:
+
+```yaml
+- name: Run OWASP PTK
+  id: ptk
+  uses: ptklabs/ptk-action@v1
+  with:
+    target: http://127.0.0.1:3000
+    engines: DAST,IAST,SAST,SCA
+    fail-on: high
+```
+
+See the [PTK Action documentation](https://github.com/ptklabs/ptk-action) for application startup, authentication, SARIF upload, artifact retention, permissions, and complete workflow examples.
+
+## Use PTK with OWASP ZAP
+
+The OWASP PTK add-on lets ZAP launch supported browsers with PTK, coordinate the browser scan lifecycle, and import PTK findings into the ZAP alert model. Use the PTK active scan rule in current ZAP automation plans and enable the PTK rules required by the scan policy.
+
+[Read the OWASP PTK add-on documentation](https://www.zaproxy.org/docs/desktop/addons/owasp-ptk/) · [Read the automation and ZAP guide](https://github.com/DenisPodgurskii/pentestkit/blob/master/docs/guide/automation-and-zap.md)
+
+## Where PTK fits
+
+PTK complements full interception proxies, network scanners, and repository-level source-code analysis tools; it is not intended to replace all of them.
+
+Its particular strength is testing what the browser can actually see and execute: authenticated workflows, browser-generated traffic, loaded client-side code, DOM behaviour, SPA navigation, and runtime application state.
+
 ## Documentation
 
 - [Pentester Guide](https://github.com/DenisPodgurskii/pentestkit/blob/master/docs/guide/README.md)
+- [PTK Agent and npm documentation](https://github.com/ptklabs/ptk-agent/blob/main/docs/npm/README.md)
+- [PTK Agent CLI reference](https://github.com/ptklabs/ptk-agent/blob/main/docs/npm/cli.md)
+- [Browser-framework integrations](https://github.com/ptklabs/ptk-agent/blob/main/docs/npm/frameworks.md)
+- [Cloud-browser providers](https://github.com/ptklabs/ptk-agent/blob/main/docs/npm/providers.md)
+- [GitHub Actions](https://github.com/marketplace/actions/owasp-ptk-security-scan)
 - [Automation and ZAP](https://github.com/DenisPodgurskii/pentestkit/blob/master/docs/guide/automation-and-zap.md)
 - [PTK website and how-to guides](https://pentestkit.co.uk/howto.html)
-- [Source code](https://github.com/DenisPodgurskii/pentestkit)
 - [Browser-security playground](https://denispodgurskii.github.io/DOM-based-test-cases/)
 - [YouTube channel](https://www.youtube.com/channel/UCbEcTounPkV1aitE1egXfqw)
 
@@ -89,11 +151,12 @@ New users can begin with the public [browser-security playground](https://denisp
 
 Contributions, test cases, bug reports, and feature requests are welcome.
 
-- [Report a bug or request a feature](https://github.com/DenisPodgurskii/pentestkit/issues)
-- [Contribute to OWASP PTK](https://github.com/DenisPodgurskii/pentestkit)
+- [OWASP PTK extension source and issues](https://github.com/DenisPodgurskii/pentestkit)
+- [PTK Agent source and issues](https://github.com/ptklabs/ptk-agent)
+- [PTK Action source and issues](https://github.com/ptklabs/ptk-action)
 - [Support OWASP PTK development](https://www.paypal.com/donate/?hosted_button_id=RNE87MVGX576E)
 
-Sign in to GitHub before creating an issue. Do not include credentials, tokens, private application traffic, or undisclosed vulnerabilities in public issues.
+Sign in to GitHub before creating an issue. Do not include credentials, tokens, private application traffic, or undisclosed vulnerabilities in public issues. Report security vulnerabilities privately through the relevant repository's security-advisory channel.
 
 ## Responsible use
 
